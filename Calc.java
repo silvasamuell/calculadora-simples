@@ -5,12 +5,6 @@ public class Calc {
 	double x;
 	double y;
 
-	Calc(double x, double y) {
-
-		this.x = x;
-		this.y = y;
-	}
-
 	public double Soma(double x, double y) {
 		return x + y;
 	}

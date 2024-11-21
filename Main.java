@@ -12,30 +12,34 @@ public class Main {
 		System.out.println("1-Soma 2-Subtração 3-Multiplicação 4-Divisão");
 		int resposta = entrada.nextInt();
 
-		System.out.println("Qual é o primeiro número?");
-		double x = entrada.nextDouble();
+		Calc calc = new Calc();
 
-		System.out.println("Qual é o segundo número?");
-		double y = entrada.nextDouble();
+		double resultado = 0;
 
-		double resultado;
+		if (resposta >= 1 && resposta <= 4) {
 
-		switch (resposta) {
-		case 1:
-			System.out.println(resultado = new Calc(x, y).Soma(x, y));
-			break;
-		case 2:
-			System.out.println(resultado = new Calc(x, y).Sub(x, y));
-			break;
-		case 3:
-			System.out.println(resultado = new Calc(x, y).Mult(x, y));
-			break;
-		case 4:
-			System.out.println(resultado = new Calc(x, y).Div(x, y));
-			break;
-		default:
-			System.out.println("Esse operação não é válida");
-			break;
+			System.out.println("Qual é o primeiro número?");
+			double x = entrada.nextDouble();
+
+			System.out.println("Qual é o segundo número?");
+			double y = entrada.nextDouble();
+
+			switch (resposta) {
+			case 1:
+				System.out.println(resultado = calc.Soma(x, y));
+				break;
+			case 2:
+				System.out.println(resultado = calc.Sub(x, y));
+				break;
+			case 3:
+				System.out.println(resultado = calc.Mult(x, y));
+				break;
+			case 4:
+				System.out.println(resultado = calc.Div(x, y));
+				break;
+			}
+		} else {
+			System.out.println("Essa operação não é válida");
 		}
 
 		entrada.close();
