@@ -14,8 +14,6 @@ public class Main {
 
 		Calc calc = new Calc();
 
-		double resultado = 0;
-
 		if (resposta >= 1 && resposta <= 4) {
 
 			System.out.println("Qual é o primeiro número?");
@@ -26,16 +24,16 @@ public class Main {
 
 			switch (resposta) {
 			case 1:
-				System.out.println(resultado = calc.Soma(x, y));
+				System.out.println(calc.Soma(x, y));
 				break;
 			case 2:
-				System.out.println(resultado = calc.Sub(x, y));
+				System.out.println(calc.Sub(x, y));
 				break;
 			case 3:
-				System.out.println(resultado = calc.Mult(x, y));
+				System.out.println(calc.Mult(x, y));
 				break;
 			case 4:
-				System.out.println(resultado = calc.Div(x, y));
+				System.out.println(calc.Div(x, y));
 				break;
 			}
 		} else {
